@@ -1,4 +1,4 @@
-header, .icon-wrap, .header-navbar, header form {
+header, .header-icon-wrap, .header-navbar, header form {
     display: flex;
     align-items: center;
 }
@@ -6,20 +6,31 @@ header {
     margin: 50px 25px;
     justify-content: space-between;
 }
-.icon-wrap svg {
+.header-icon-wrap svg {
     width: 50px;
 }
-.icon-wrap h1 {
+.header-icon-wrap h1 {
     font-size: 32px;
 }
-.icon-wrap h1::before {
+.header-icon-wrap h1::before {
     content: '| '
 }
 .header-navbar {
-    gap: 10px;
+    gap: 20px;
 }
 .header-navbar a {
     font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
 }
 #nav-input {
     margin: 10px;
@@ -31,11 +42,11 @@ header {
 .pic-sect {
     position: relative;
     text-align: center;
-}
-.pic-sect img {
+    background-image: url("../assets/teapot.jpg");
     width: 100%;
-    aspect-ratio: 1439/615;
-    object-fit: cover;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
 .pic-sect h1 {
     position: absolute;
@@ -82,11 +93,11 @@ header {
 }
 .about-sect {
     position: relative;
-}
-.about-sect img {
+    background-image: url("../assets/nature.jpg");
     width: 100%;
-    aspect-ratio: 1441/578;
-    object-fit: cover;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }
 .about-wrap {
     position: absolute;
@@ -102,6 +113,10 @@ header {
     font-size: 56px;
     color: #fff;
 }
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+}
 .button-wrap button {
     width: max-content;
     padding: 2px 5px;
@@ -112,4 +127,10 @@ header {
     background-color: rgba(11, 37, 56, 0.80);
     color: #fff;
     cursor: pointer;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
 }
