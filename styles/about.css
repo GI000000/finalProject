@@ -45,11 +45,12 @@ label {
 .pic-sect {
     position: relative;
     text-align: center;
-    background-image: url("../assets/teapot.jpg");
+    background-image: url("../assets/farm.jpg");
     width: 100%;
     height: 600px;
     background-size: cover;
     background-position: center;
+    opacity: 0.8;
 }
 .pic-sect h1 {
     position: absolute;
@@ -60,76 +61,70 @@ label {
     z-index: 5;
     color: #fff;
 }
-.prod-sect {
+.about-sect {
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.prod-sect h1 {
+.about-sect h1 {
     font-size: 56px;
 }
-.prod-items {
+.about-items {
     padding: 50px;
     display: flex;
-    gap: 45px;
+    justify-content: space-evenly;
 }
-.prod-item {
+.about-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.prod-item img {
-    width: 324px;
-}
-.prod-sect button {
-    width: max-content;
-    padding: 2px 5px;
-    font-size: 32px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: none;
-    border-radius: 5px;
+.about-item div {
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
     background-color: rgba(11, 37, 56, 0.80);
     color: #fff;
-    cursor: pointer;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.about-sect {
+.about-item p {
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+.pic-about-sect {
     position: relative;
-    background-image: url("../assets/nature.jpg");
+    background: url("../assets/people.jpg");
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
 }
-.about-wrap {
+.pic-about-sect div {
+    width: 60%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color: #05182a;
+    opacity: 0.8;
 }
-.about-wrap h1 {
-    width: 400px;
+.pic-about-sect h1 {
     font-size: 56px;
-    color: #fff;
+    margin-top: 25px;
 }
-.button-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-.button-wrap button {
-    width: max-content;
-    padding: 2px 5px;
-    font-size: 32px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(11, 37, 56, 0.80);
-    color: #fff;
-    cursor: pointer;
+.pic-about-sect p {
+    width: 50%;
+    font-size: 27px;
 }
 footer {
     background-color: #e4e4e4;
