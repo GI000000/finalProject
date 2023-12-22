@@ -43,11 +43,10 @@ label {
     cursor: pointer;
 }
 .pic-sect {
-    position: relative;
-    text-align: center;
-    background-image: url("../assets/teapot.jpg");
     width: 100%;
     height: 600px;
+    position: relative;
+    background-image: url("../assets/teapot.jpg");
     background-size: cover;
     background-position: center;
 }
