@@ -1,0 +1,94 @@
+header, .header-icon-wrap, .header-navbar, header form {
+    display: flex;
+    align-items: center;
+}
+header {
+    margin: 50px 25px;
+    justify-content: space-between;
+}
+.header-icon-wrap svg {
+    width: 50px;
+}
+.header-icon-wrap h1 {
+    font-size: 32px;
+}
+.header-icon-wrap h1::before {
+    content: '| '
+}
+.header-navbar {
+    gap: 20px;
+}
+.header-navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
+}
+#nav-input {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 50px;
+}
+label {
+    cursor: pointer;
+}
+.pic-sect {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url("../assets/suppot.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.pic-sect h1 {
+    position: absolute;
+    font-size: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #fff;
+}
+main form {
+    width: 60%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#mail-input {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+#msg-input {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.submit-btn {
+    width: max-content;
+    padding: 2px 5px;
+    font-size: 32px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(11, 37, 56, 0.80);
+    color: #fff;
+    cursor: pointer;
+    align-self: center;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
+}
