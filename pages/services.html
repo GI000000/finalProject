@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TeaTopia | სერვისები</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/services.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"/></svg>
+            <h1>TeaTopia</h1>
+        </div>
+        <nav class="header-navbar">
+            <a href="index.html" class="header-link">მთავარი</a>
+            <a href="about.html" class="header-link">ჩვენ შესახებ</a>
+            <a href="" class="active-link">სერვისები</a>
+            <a href="news.html" class="header-link">სიახლე</a>
+            <a href="contact.html" class="header-link">კონტაქტი</a>
+        </nav>
+        <form>
+            <input type="text" id="nav-input" placeholder="მოძებნა...">
+            <label for="nav-input"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                <path d="M21.792 22.7117L13.1817 14.1015C12.4942 14.6872 11.7036 15.1405 10.8098 15.4614C9.91608 15.7822 9.01775 15.9426 8.11483 15.9426C5.913 15.9426 4.04942 15.1804 2.52408 13.656C0.998751 12.1307 0.236084 10.2675 0.236084 8.06662C0.236084 5.86571 0.997833 4.00166 2.52133 2.4745C4.04575 0.946414 5.90842 0.182373 8.10933 0.182373C10.3112 0.182373 12.1757 0.94504 13.7028 2.47037C15.23 3.99571 15.9936 5.85975 15.9936 8.0625C15.9936 9.01766 15.8245 9.94212 15.4862 10.8359C15.147 11.7296 14.7025 12.4941 14.1525 13.1294L22.7627 21.7382L21.7906 22.7117H21.792ZM8.11483 14.5662C9.939 14.5662 11.4795 13.9383 12.7362 12.6825C13.992 11.4267 14.62 9.88621 14.62 8.06112C14.62 6.23696 13.992 4.69696 12.7362 3.44112C11.4804 2.18529 9.94038 1.55737 8.11621 1.55737C6.29204 1.55737 4.75158 2.18529 3.49483 3.44112C2.239 4.69696 1.61108 6.23696 1.61108 8.06112C1.61108 9.88529 2.239 11.4253 3.49483 12.6811C4.75067 13.937 6.29067 14.5662 8.11483 14.5662Z" fill="black"/>
+            </svg>
+            </label>
+        </form>
+    </header>
+    <main>
+        <section class="pic-sect">
+            <h1>ჩვენი სერვისები</h1>
+        </section>
+        <section class="icon-sect">
+            <a href="#iframe-sect" class="icon-item">
+                <img src="../assets/tea-icon.png" alt="tea icon" class="icon">
+                <h1>ადგილზე მომსახურების სერვისი</h1>
+            </a>
+            <a href="contact.html" class="icon-item">
+                <img src="../assets/moped-icon.png" alt="moped icon" class="icon">
+                <h1>მიტანის სერვისი</h1>
+            </a>
+        </section>
+        <section id="iframe-sect">
+            <div>  
+                <address>მის: ლ. იპსუმის ქუჩა No. 4</address>
+                <h1>გვეწვიეთ</h1>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.6845123683509!2d44.79687856547986!3d41.690968682010016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d5c21a7e203%3A0x60bf81071d3c5109!2sTsota%20Tsota%20Craft%20Beer%20Pub!5e0!3m2!1sen!2sge!4v1703410857486!5m2!1sen!2sge" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>©All rights reserved.</p>
+    </footer>
 </body>
 </html>

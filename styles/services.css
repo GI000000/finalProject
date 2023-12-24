@@ -1,0 +1,104 @@
+header, .header-icon-wrap, .header-navbar, header form {
+    display: flex;
+    align-items: center;
+}
+header {
+    margin: 50px 25px;
+    justify-content: space-between;
+}
+.header-icon-wrap svg {
+    width: 50px;
+}
+.header-icon-wrap h1 {
+    font-size: 32px;
+}
+.header-icon-wrap h1::before {
+    content: '| '
+}
+.header-navbar {
+    gap: 20px;
+}
+.header-navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
+}
+#nav-input {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 50px;
+}
+label {
+    cursor: pointer;
+}
+.pic-sect {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url("../assets/tea.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.pic-sect h1 {
+    position: absolute;
+    font-size: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #fff;
+}
+.icon-sect {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-item img {
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+.icon-item h1 {
+    font-size: 36px;
+}
+.icon-item:hover .icon {
+    border-color: #2fff20;
+}
+#iframe-sect {
+    display: flex;
+    justify-content: space-around;
+}
+#iframe-sect div {
+    font-size: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
+}

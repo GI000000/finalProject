@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -41,6 +40,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+html {
+	scroll-behavior: smooth;
 }
 a {
 	text-decoration: none;
