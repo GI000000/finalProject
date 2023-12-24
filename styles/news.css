@@ -42,6 +42,9 @@ header {
 label {
     cursor: pointer;
 }
+.burger-bar {
+    display: none;
+}
 main {
     height: 100vh;
     display: flex;
@@ -60,4 +63,36 @@ footer {
 }
 footer p {
     padding: 40px;
+}
+@media (max-width: 992px) {
+    header {
+        margin: 50px 10px;
+    }
+    .header-icon-wrap svg {
+        width: 25px;
+    }
+    .header-icon-wrap h1 {
+        font-size: 27px;
+    }
+    .header-navbar {
+        gap: 10px;
+    }
+    .header-navbar a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .header-navbar {
+        display: none;
+    }
+    .burger-bar {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: block;       
+    }
+}
+@media (max-width: 576px) {
+    header form {
+        display: none;
+    }
 }
