@@ -1,0 +1,63 @@
+header, .header-icon-wrap, .header-navbar, header form {
+    display: flex;
+    align-items: center;
+}
+header {
+    margin: 50px 25px;
+    justify-content: space-between;
+}
+.header-icon-wrap svg {
+    width: 50px;
+}
+.header-icon-wrap h1 {
+    font-size: 32px;
+}
+.header-icon-wrap h1::before {
+    content: '| '
+}
+.header-navbar {
+    gap: 20px;
+}
+.header-navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
+}
+#nav-input {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 50px;
+}
+label {
+    cursor: pointer;
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    font-size: 52px;
+}
+main p {
+    font-size: 36px;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
+}
