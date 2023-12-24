@@ -42,6 +42,9 @@ header {
 label {
     cursor: pointer;
 }
+.burger-bar {
+    display: none;
+}
 .pic-sect {
     width: 100%;
     height: 600px;
@@ -54,6 +57,7 @@ label {
 .pic-sect h1 {
     position: absolute;
     font-size: 64px;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -113,7 +117,6 @@ label {
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 50px;
     background-color: #05182a;
     opacity: 0.8;
@@ -131,4 +134,76 @@ footer {
 }
 footer p {
     padding: 40px;
+}
+@media (max-width: 1200px) {
+    .about-sect h1 {
+        font-size: 44px;
+    }
+    .pic-about-sect {
+        height: 300px;
+    }
+    .pic-about-sect h1 {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+    .pic-about-sect p {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 992px) {
+    header {
+        margin: 50px 10px;
+    }
+    .header-icon-wrap svg {
+        width: 25px;
+    }
+    .header-icon-wrap h1 {
+        font-size: 27px;
+    }
+    .header-navbar {
+        gap: 10px;
+    }
+    .header-navbar a {
+        font-size: 14px;
+    }
+    .about-sect h1 {
+        font-size: 27px;
+    }
+    .about-items {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .pic-about-sect p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .header-navbar {
+        display: none;
+    }
+    .burger-bar {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: block;       
+    }
+    .pic-sect {
+        height: 250px;
+    }
+    .pic-sect h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    header form {
+        display: none;
+    }
+    .about-sect h1 {
+        font-size: 18px;
+    }
+    .about-item p {
+        width: 70%;
+    }
 }
