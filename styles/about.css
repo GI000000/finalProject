@@ -103,6 +103,7 @@ label {
     background: url("../assets/people.jpg");
     background-size: cover;
     background-position: center;
+    color: #fff;
 }
 .pic-about-sect div {
     width: 60%;
