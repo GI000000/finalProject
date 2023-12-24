@@ -105,9 +105,6 @@ footer {
 footer p {
     padding: 40px;
 }
-@media (max-width: 1200px) {
-    
-}
 @media (max-width: 992px) {
     header {
         margin: 50px 10px;
