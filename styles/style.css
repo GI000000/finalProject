@@ -1,4 +1,4 @@
-header, .header-icon-wrap, .header-navbar, header form {
+/* header, .header-icon-wrap, .header-navbar, header form {
     display: flex;
     align-items: center;
 }
@@ -214,6 +214,285 @@ footer p {
     }
     .prod-items {
         flex-direction: column;
+    }
+    .about-wrap h1 {
+        width: 50%;
+        font-size: 27px;
+    }
+    .button-wrap button {
+        font-size: 22px;
+    }
+} */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 15 version
+*/
+
+header, .header-icon-wrap, .header-navbar, header form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header {
+    margin: 50px 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.header-icon-wrap svg {
+    width: 50px;
+}
+.header-icon-wrap h1 {
+    font-size: 32px;
+}
+.header-icon-wrap h1::before {
+    content: '| '
+}
+.header-navbar {
+    gap: 20px;
+}
+.header-navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
+}
+#nav-input {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 50px;
+}
+label {
+    cursor: pointer;
+}
+.burger-bar {
+    display: none;
+}
+.pic-sect {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url("../assets/teapot.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.pic-sect h1 {
+    position: absolute;
+    font-size: 64px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #fff;
+}
+.prod-sect {
+    width: 100%;
+    margin: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.prod-sect h1 {
+    font-size: 56px;
+}
+.prod-items {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 45px;
+}
+.prod-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+}
+.prod-item img {
+    width: 324px;
+}
+.prod-sect button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 2px 5px;
+    font-size: 32px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(11, 37, 56, 0.80);
+    color: #fff;
+    cursor: pointer;
+}
+.about-sect {
+    position: relative;
+    background-image: url("../assets/nature.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.about-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+}
+.about-wrap h1 {
+    width: 400px;
+    font-size: 56px;
+    color: #fff;
+}
+.button-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.button-wrap button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 2px 5px;
+    font-size: 32px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(11, 37, 56, 0.80);
+    color: #fff;
+    cursor: pointer;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
+}
+@media (max-width: 1200px) {
+    .prod-item img {
+        width: 250px;
+    }
+}
+@media (max-width: 992px) {
+    header {
+        margin: 50px 10px;
+    }
+    .header-icon-wrap svg {
+        width: 25px;
+    }
+    .header-icon-wrap h1 {
+        font-size: 27px;
+    }
+    .header-navbar {
+        gap: 10px;
+    }
+    .header-navbar a {
+        font-size: 14px;
+    }
+    .prod-item img {
+        width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .header-navbar {
+        display: none;
+    }
+    .burger-bar {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: block;       
+    }
+    .pic-sect {
+        height: 250px;
+    }
+    .pic-sect h1 {
+        font-size: 36px;
+    }
+    .prod-sect h1 {
+        font-size: 27px;
+    }
+    .prod-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .about-wrap h1 {
+        width: 50%;
+        font-size: 27px;
+    }
+    .button-wrap button {
+        font-size: 22px;
+    }
+}
+@media (max-width: 576px) {
+    .header-navbar, header form {
+        display: none;
+    }
+    .burger-bar {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: block;       
+    }
+    .pic-sect {
+        height: 250px;
+    }
+    .pic-sect h1 {
+        font-size: 36px;
+    }
+    .prod-sect h1 {
+        font-size: 27px;
+    }
+    .prod-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .about-wrap h1 {
         width: 50%;

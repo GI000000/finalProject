@@ -1,4 +1,4 @@
-header, .header-icon-wrap, .header-navbar, header form {
+/* header, .header-icon-wrap, .header-navbar, header form {
     display: flex;
     align-items: center;
 }
@@ -51,6 +51,128 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+main h1 {
+    font-size: 52px;
+}
+main p {
+    font-size: 36px;
+}
+footer {
+    background-color: #e4e4e4;
+}
+footer p {
+    padding: 40px;
+}
+@media (max-width: 992px) {
+    header {
+        margin: 50px 10px;
+    }
+    .header-icon-wrap svg {
+        width: 25px;
+    }
+    .header-icon-wrap h1 {
+        font-size: 27px;
+    }
+    .header-navbar {
+        gap: 10px;
+    }
+    .header-navbar a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .header-navbar {
+        display: none;
+    }
+    .burger-bar {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: block;       
+    }
+}
+@media (max-width: 576px) {
+    header form {
+        display: none;
+    }
+} */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 6 version
+*/
+
+header, .header-icon-wrap, .header-navbar, header form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header {
+    margin: 50px 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.header-icon-wrap svg {
+    width: 50px;
+}
+.header-icon-wrap h1 {
+    font-size: 32px;
+}
+.header-icon-wrap h1::before {
+    content: '| '
+}
+.header-navbar {
+    gap: 20px;
+}
+.header-navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.active-link:hover {
+    color: #2fff20;
+    padding-bottom: 15px;
+}
+.header-link:hover {
+    color: #ff3220;
+    padding-bottom: 15px;
+}
+#nav-input {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 50px;
+}
+label {
+    cursor: pointer;
+}
+.burger-bar {
+    display: none;
+}
+main {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 main h1 {
     font-size: 52px;
